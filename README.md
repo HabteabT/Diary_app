@@ -1,223 +1,60 @@
-```yaml
+Diary_app
 
-project:
+A cross-platform Diary / Journal mobile app built with React Native (Expo) and Firebase.
+Users can sign up, log in, and write personal diary entries securely.
 
-&nbsp; name: Diary\_app
+Overview
 
-&nbsp; description: >
+Diary_app is a simple journaling application focused on:
 
-&nbsp;   A cross-platform Diary / Journal mobile app built with React Native (Expo)
+Easy to use interface
 
-&nbsp;   and Firebase. Users can sign up/login, write diary entries, and manage their
+Secure authentication
 
-&nbsp;   data securely.
+Clean screen navigation
 
+Safe handling of sensitive data
 
+Features
 
-overview:
+Sign up / Login with Firebase
 
-&nbsp; summary: >
+Create and manage diary entries
 
-&nbsp;   Diary\_app is a simple, clean journaling app that focuses on usability,
+Screen-based navigation
 
-&nbsp;   security, and clear navigation.
+Secure environment variable usage
 
-&nbsp; features:
+No secrets stored in the repository
 
-&nbsp;   - Firebase authentication (login / signup)
+Project Structure
 
-&nbsp;   - Create, edit, and manage diary entries
+Diary-app
+├── assets/        # App assets
+├── functions/     # Firebase functions (optional)
+├── images/        # Images and UI resources
+├── Modals/        # Modal components
+├── navigation/    # App navigation
+├── Screens/       # App screens
+├── my-app/        # Optional / legacy folder
+├── App.js         # Entry point
+├── firebase.js    # Firebase setup
+├── package.json   # Dependencies
+└── README.md      # Documentation
+Tech Stack
 
-&nbsp;   - Clear navigation between screens
+React Native (Expo)
 
-&nbsp;   - Secure configuration using environment variables
+React Navigation
 
-&nbsp;   - No secrets committed to GitHub
+Firebase (Auth & Firestore)
 
+AsyncStorage
 
+Security
 
-project\_structure:
+Environment variables stored in .env
 
-&nbsp; root: Diary-app
+.env is ignored by Git
 
-&nbsp; folders:
-
-&nbsp;   assets: App assets (icons, static resources)
-
-&nbsp;   functions: Firebase Cloud Functions (optional backend logic)
-
-&nbsp;   images: App images and UI resources
-
-&nbsp;   Modals: Modal components
-
-&nbsp;   navigation: Navigation setup (tabs / stacks)
-
-&nbsp;   Screens: Application screens (Login, Home, Diary, Summary, etc.)
-
-&nbsp;   my-app: Legacy or optional folder (can be removed if unused)
-
-&nbsp; files:
-
-&nbsp;   .gitignore: Ignores .env and other sensitive files
-
-&nbsp;   .runtimeconfig.json: Runtime configuration
-
-&nbsp;   App.js: Application entry point
-
-&nbsp;   app.json: Expo configuration
-
-&nbsp;   babel.config.js: Babel configuration
-
-&nbsp;   eas.json: Expo Application Services configuration
-
-&nbsp;   firebase.js: Firebase initialization (env-based)
-
-&nbsp;   firebase.json: Firebase project configuration
-
-&nbsp;   package.json: Dependencies and scripts
-
-&nbsp;   README.md: Project documentation
-
-&nbsp; notes:
-
-&nbsp;   - node\_modules is intentionally excluded from the repository
-
-
-
-tech\_stack:
-
-&nbsp; frontend: React Native (Expo)
-
-&nbsp; navigation: React Navigation
-
-&nbsp; backend:
-
-&nbsp;   - Firebase Authentication
-
-&nbsp;   - Firebase Firestore
-
-&nbsp; storage: AsyncStorage
-
-&nbsp; cloud\_functions: Firebase Functions (optional)
-
-
-
-security:
-
-&nbsp; public\_safe: true
-
-&nbsp; measures:
-
-&nbsp;   - Environment variables stored in .env
-
-&nbsp;   - .env ignored by git
-
-&nbsp;   - No API keys or secrets committed
-
-&nbsp; verified\_by:
-
-&nbsp;   - git status shows clean working tree
-
-&nbsp;   - git check-ignore confirms .env is ignored
-
-
-
-installation:
-
-&nbsp; clone:
-
-&nbsp;   command: git clone https://github.com/HabteabT/Diary\_app.git
-
-&nbsp; setup:
-
-&nbsp;   - cd Diary-app
-
-&nbsp;   - npm install
-
-
-
-usage:
-
-&nbsp; run\_app:
-
-&nbsp;   command: npx expo start
-
-&nbsp;   options:
-
-&nbsp;     - Scan QR code with Expo Go (Android / iOS)
-
-&nbsp;     - Press "a" for Android emulator
-
-&nbsp;     - Press "w" for web
-
-&nbsp; firebase\_functions\_optional:
-
-&nbsp;   steps:
-
-&nbsp;     - cd functions
-
-&nbsp;     - npm install
-
-&nbsp;     - firebase emulators:start
-
-
-
-environment\_variables:
-
-&nbsp; file: .env
-
-&nbsp; ignored\_by\_git: true
-
-&nbsp; variables:
-
-&nbsp;   EXPO\_PUBLIC\_FIREBASE\_API\_KEY: xxxxx
-
-&nbsp;   EXPO\_PUBLIC\_FIREBASE\_AUTH\_DOMAIN: xxxxx
-
-&nbsp;   EXPO\_PUBLIC\_FIREBASE\_PROJECT\_ID: xxxxx
-
-&nbsp;   EXPO\_PUBLIC\_FIREBASE\_STORAGE\_BUCKET: xxxxx
-
-&nbsp;   EXPO\_PUBLIC\_FIREBASE\_MESSAGING\_SENDER\_ID: xxxxx
-
-&nbsp;   EXPO\_PUBLIC\_FIREBASE\_APP\_ID: xxxxx
-
-&nbsp;   EXPO\_PUBLIC\_FIREBASE\_MEASUREMENT\_ID: xxxxx
-
-&nbsp; restart\_required:
-
-&nbsp;   command: npx expo start -c
-
-
-
-troubleshooting:
-
-&nbsp; expo\_cache:
-
-&nbsp;   command: npx expo start -c
-
-&nbsp; dependency\_mismatch:
-
-&nbsp;   command: npx expo install
-
-&nbsp; node\_modules\_windows:
-
-&nbsp;   steps:
-
-&nbsp;     - rmdir /s /q node\_modules
-
-&nbsp;     - npm install
-
-
-
-open\_source:
-
-&nbsp; contributions: >
-
-&nbsp;   Contributions are welcome via pull requests.
-
-```
-
-
-
-
+No API keys committed
